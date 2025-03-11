@@ -99,7 +99,7 @@ const ShowEpi = ({ id, showData }) => {
               onClick={() => {
                 setSelectedEpisode(episode.episode_number); // ✅ Update selected episode
                 router.push(
-                  `/show?id=${id}&s=${selectedSeason}&ep=${episode.episode_number}#player`
+                  `/watch/show?id=${id}&s=${selectedSeason}&ep=${episode.episode_number}#player`
                 );
               }}
               className={`relative min-w-[160px] h-[90px] rounded-xl transition-all`}
